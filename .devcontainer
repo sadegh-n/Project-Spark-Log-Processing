@@ -1,0 +1,20 @@
+{
+  "name": "Spark & Airflow Pipeline",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.10-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "11",
+      "jdkDistro": "ms"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "redhat.java"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt && mkdir -p data/raw data/processed"
+}
