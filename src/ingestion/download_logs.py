@@ -7,7 +7,7 @@ def download_data(dataset_id: str, output_dir: str):
     Downloads and unzips a Kaggle dataset to the specified directory.
     """
     api = KaggleApi()
-    api.autenticate()
+    api.authenticate()
 
     os.makedirs(output_dir, exist_ok = True)
 
